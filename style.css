@@ -1,0 +1,113 @@
+.background {
+    background-image: url("background.png"); 
+    background-size: 123%;
+}
+
+.boy {
+    height: 250px;
+    margin-top: 595px; /* ඉහළ පැත්තෙන් දුර */
+    position: absolute; /* නියත ස්ථානය */
+}
+
+.score {
+    font-size: 50px; 
+    font-weight: bold;
+    color: red;
+    margin-top: 50px; /* ඉහළ ඉඩ */
+    margin-left: 50px; /* වමට ඉඩ */
+    position: absolute; /* නියත ස්ථානය */
+}
+
+.flame {
+    height: 150px; /* උස */
+    position: absolute; /* නියත ස්ථානය */
+    margin-top: 695px; /* ඉහළ පැත්තෙන් දුර */
+    margin-left: 500px; /* වමට දුර */
+}
+
+.startMessage {
+    font-size: 70px;
+    font-weight: bold;
+    color: black; /* පාට */
+    position: absolute; /* නියත ස්ථානය */
+    top: 370px; /* ඉහළ පැත්තෙන් ස්ථානය */
+    left: 50%; /* මැදට */
+    margin-left: -300px; /* මැදට ගැලපීම */
+    display: block; /* පෙන්වීම */
+}
+
+/* End screen */
+.end {
+    width: 100%;
+    height: 100vh;
+    position: absolute; /* නියත ස්ථානය */
+    background-image: repeating-radial-gradient(red);
+    display: flex; /* කෙලින් පිහිටුම */
+    flex-direction: column; /* තීරු ලෙස සකසන්න */
+    align-items: center; /* මැදට ගැලපීම */
+    justify-content: center; /* මැදට ගැලපීම */
+    font-size: 90px; /* අකුරු ප්‍රමාණය */
+    font-weight: bold; /* තද අකුරු */
+    color: white;
+    font-family: broadway; /* අකුරු වර්ගය */
+    visibility: hidden; /* පළමු වරට නොපෙන්වීම */
+}
+
+/* Try Again Button */
+.btn {
+    height: 35px;
+    width: 300px;
+    margin-top: 50px; /* ඉහළ ඉඩ */
+    font-size: 25px; /* අකුරු ප්‍රමාණය */
+    font-weight: 1000; /* තද අකුරු */
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    height: 37px;
+    width: 305px;
+    background-color: aquamarine;
+    cursor: pointer; /* මවුසය ගිය විට පෙන්වීම */
+    color: black; /* අකුරු පාට වෙනස්වීම */
+}
+
+.youwon {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    position: absolute; /* නියත ස්ථානය */
+    top: 0; /* ඉහළින් ආරම්භය */
+    left: 0; /* වම්පස ආරම්භය */
+    display: flex; /* කෙලින් පිහිටුම */
+    flex-direction: column; /* තීරු ලෙස සකසන්න */
+    align-items: center; /* මැදට ගැලපීම */
+    justify-content: center; /* මැදට ගැලපීම */
+    font-size: 100px; /* අකුරු ප්‍රමාණය */
+    font-weight: bold; /* තද අකුරු */
+    font-family: Arial, sans-serif; /* අකුරු වගර්ය */
+    color: goldenrod; /* පාට */
+    text-shadow: 3px 3px 10px gold; /* අකුරු රේඛාව */
+    visibility: hidden; /* පළමු වරට නොපෙන්වීම */
+}
+
+/* Button */
+.playagain {
+    height: 50px; /* උස */
+    width: 200px; /* පළල */
+    margin-top: 30px; /* ඉහළ ඉඩ */
+    font-size: 25px; /* අකුරු ප්‍රමාණය */
+    font-weight: bold; /* තද අකුරු */
+    background-color: goldenrod; /* පාට */
+    border: none; /* ආරක්ෂක සීමාව නැත */
+    border-radius: 10px; /* වටකුරු කිරීම් */
+    color: white; /* අකුරු පාට */
+    cursor: pointer; /* මවුසය මතට ගිය විට අතක් පෙන්වීම */
+    transition: 0.3s; /* මාරු වේලාව */
+}
+
+.playagain:hover {
+    background-color: #000000; /* පාට වෙනස්වීම */
+    transform: scale(1.1); /* ප්‍රමාණය වැඩිවීම */
+}
